@@ -1,0 +1,135 @@
+@import url(Projet1-CSS-1/font/oswald/Oswald-Light.ttf);
+
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+}
+
+body{
+    background-image: url(Projet1-CSS-1/img/fond.png);
+    display: grid;
+    grid-template-areas: ". header ."
+                         ". main ."
+                         ". footer .";
+    grid-template-columns: 1fr 750px 1fr;
+    place-items: center;
+   
+}
+
+/*.............header....................*/
+header{
+    background-color: #b8cb21;
+    grid-area: header;
+    height: 150px;
+    width: 750px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(Oswald-Light);
+    color: #34501c;
+    
+}
+.logoGO{
+    display: flex;
+    width: max-content;
+    justify-content: flex-start;
+}
+.nav{
+    width: 300px;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: underline;
+}
+/*.............main....................*/
+main{
+    grid-area: main;
+    height: auto;
+    background-color: #ffffff;
+    padding: 50px 20px 20px 30px;
+}
+.titre{
+    color: #c0d040;
+    font-family:var(oswald);
+}
+
+/* icon bug */
+.up .titre .fa-brands{
+    color: #b8cb21;
+    padding: 10px;
+}
+.down .fa-brands{
+    padding: auto;
+    color: #b8cb21;
+
+
+}
+
+.img1{ 
+    height: 100px;
+    display: flex;
+    position: static;
+}
+.img2{
+    height: 80px;
+    display: flex;
+    position: static;
+}
+.paragraphe{
+    padding: 5px;
+    position:relative;
+ 
+}
+.paragraphe p{
+    color: #87878e;
+    display: flex;
+    align-content: flex-start;
+}
+
+ul{
+    padding: 20px 10px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    text-decoration:none;
+    list-style: disc;
+    color: #87878e;
+}
+
+.readmore{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+button{
+    color: #ffff;
+    background-color: #c0d040;
+    height: 40px;
+    width: 100px;
+    border-style:none;
+}
+
+/* ............footer............ */
+footer{
+    grid-area: footer;
+    height: auto;
+}
+.logo3wa{
+    display: flex;
+    justify-content: center;
+
+}
+.logo3wa img{
+    width: 60px;
+    border-top: 20px;
+    padding: 10px;
+}
+.paragraphe-footer p{
+    color: #87878e;
+    width: 1100px;
+}
